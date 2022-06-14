@@ -40,7 +40,7 @@ function calculate(number1, operator, number2) {
 
 console.log(calculate(4, '%', 8))
 
-// throw 
+// throw (sempre vai precisar do try/catch, senão pode dar erro)
 
 function sayMyName(name = '') {
     if (name === '') {
