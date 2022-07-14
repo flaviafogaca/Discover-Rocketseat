@@ -104,14 +104,28 @@ console.log(el10.previousElementSibling)
 
 // ---> CRIANDO E ADICIONANDO ELEMENTOS NA PÁGINA
 
+/*
 // createElement
 const div = document.createElement('div');
 div.innerText = "Olá devs!"
 
-// append prepend
+// append prepend 
 const body = document.querySelector('body')
 
 // body.append(div)
 
-body.prepend(div)
+//body.prepend(div)
 
+// insertBefore
+//const script = body.querySelector('script')
+body.insertBefore(div, script)
+*/
+
+// Para simular um afherBefore (não existe, ms usamos um truque), podemos fazer: 
+
+const div = document.createElement('div')
+div.innerText = "Olá devs!"
+
+const body = document.querySelector('body')
+const header = body.querySelector('header')
+body.insertBefore(div, header.nextSibling)
