@@ -46,14 +46,11 @@ element.value = "Valor"
 
 /*
 // Pegando o elemento pai
-
 const element = document.querySelector('h1')
 
 console.log(element.parentElement)
 
-
 // Pegando o elemento filho (NodeList -> Mostra espaços vazios(linhas tbm))
-
 const el1 = document.querySelector('body')
 
 console.log (el1.childNodes)
@@ -82,7 +79,6 @@ console.log(el5.lastChild)
 const el6 = document.querySelector('body')
 
 console.log(el6.lastElementChild)
-*/
 
 // Pegando irmãos (leva em consideração espaços vazios)
 const el7 = document.querySelector('header')
@@ -104,3 +100,18 @@ console.log(el9.previousSibling)
 const el10 = document.querySelector('body script')
 
 console.log(el10.previousElementSibling)
+*/
+
+// ---> CRIANDO E ADICIONANDO ELEMENTOS NA PÁGINA
+
+// createElement
+const div = document.createElement('div');
+div.innerText = "Olá devs!"
+
+// append prepend
+const body = document.querySelector('body')
+
+// body.append(div)
+
+body.prepend(div)
+
