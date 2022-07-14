@@ -42,4 +42,65 @@ const element = document.querySelector('input')
 element.value = "Valor"
 */
 
+// ---> NAVEGANDO PELOS ELEMENTOS
 
+/*
+// Pegando o elemento pai
+
+const element = document.querySelector('h1')
+
+console.log(element.parentElement)
+
+
+// Pegando o elemento filho (NodeList -> Mostra espaços vazios(linhas tbm))
+
+const el1 = document.querySelector('body')
+
+console.log (el1.childNodes)
+
+//Pegando o elemento filho (HTMLCollection -> Não mostra espaços vazios e/ou linhas sem texto)
+const el2 = document.querySelector('body')
+
+console.log(el2.children)
+
+// Pegando o primeiro filho (pega espaços vazios)
+const el3 = document.querySelector('body')
+
+console.log(el3.firstChild)
+
+// Pegando o primeiro elemento (ignora espaços vazios)
+const el4 = document.querySelector('body')
+
+console.log(el4.firstElementChild)
+
+// Pegando o último filho
+const el5 = document.querySelector('body')
+
+console.log(el5.lastChild)
+
+// Pegando o último elemento
+const el6 = document.querySelector('body')
+
+console.log(el6.lastElementChild)
+*/
+
+// Pegando irmãos (leva em consideração espaços vazios)
+const el7 = document.querySelector('header')
+
+console.log(el7.nextSibling)
+
+// Pegando irmãos (não leva em consideração espaços vazios)
+const el8 = document.querySelector('header')
+
+console.log(el8.nextElementSibling)
+
+// Pegando irmãos (leva em consideração espaços vazios)
+const el9 = document.querySelector('body script')
+
+console.log(el9.previousSibling)
+
+// Pegando irmãos (não leva em consideração espaços vazios)
+
+const el10 = document.querySelector('body script')
+
+console.log(el10.previousElementSibling)
