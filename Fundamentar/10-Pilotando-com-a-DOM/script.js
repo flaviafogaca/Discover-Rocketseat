@@ -122,10 +122,44 @@ body.insertBefore(div, script)
 */
 
 // Para simular um afherBefore (não existe, ms usamos um truque), podemos fazer: 
-
+/*
 const div = document.createElement('div')
 div.innerText = "Olá devs!"
 
 const body = document.querySelector('body')
 const header = body.querySelector('header')
 body.insertBefore(div, header.nextSibling)
+*/
+
+// EVENTOS
+/*
+function print() {
+    console.log('print')
+}
+*/
+
+/*
+const input = document.querySelector('input')
+
+input.onkeydown = function() {
+    console.log('rodei')
+}
+*/
+
+/*
+const h1 = document.querySelector('h1')
+
+h1.addEventListener('click', print)
+
+function print() {
+    console.log('print')
+}
+*/
+
+// argumento evento
+const input = document.querySelector('input')
+
+input.onkeydown = function(event) {
+    console.log(event.currentTarget.value)
+}
+
